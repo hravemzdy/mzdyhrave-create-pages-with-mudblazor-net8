@@ -1,4 +1,4 @@
-﻿@namespace mzdyhrave_create_pages_with_mudblazor_net8
+﻿@namespace EmployeeManagementApp
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,13 +6,17 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>mzdyhrave-create-pages-with-mudblazor-net8</title>
+    <title>EmployeeManagementApp</title>
     <base href="/" />
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-icons/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="css/app.css" />
     <link rel="icon" type="image/png" href="favicon.png" />
-    <link rel="stylesheet" href="mzdyhrave-create-pages-with-mudblazor-net8.styles.css" />
+    <link rel="stylesheet" href="EmployeeManagementApp.styles.css" />
+    <!-- MudBlazor -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link href="_content/MudBlazor/MudBlazor.min.css" rel="stylesheet" />
+    <!-- MudBlazor -->
     <HeadOutlet />
 </head>
 
@@ -32,5 +36,12 @@
     </Router>
 
     <script src="_framework/blazor.web.js" suppress-error="BL9992"></script>
+    <!-- MudBlazor -->
+    <script src="_content/MudBlazor/MudBlazor.min.js"></script>
+    <!-- MudBlazor -->
+
+    <MudThemeProvider />
+    <MudDialogProvider />
+    <MudSnackbarProvider />
 </body>
 </html>

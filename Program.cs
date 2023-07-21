@@ -1,9 +1,11 @@
-using mzdyhrave_create_pages_with_mudblazor_net8;
+using MudBlazor.Services;
+using EmployeeManagementApp;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents();
+builder.Services.AddMudServices();
 
 var app = builder.Build();
 
