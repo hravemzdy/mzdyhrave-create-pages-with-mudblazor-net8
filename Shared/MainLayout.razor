@@ -2,14 +2,21 @@
 
 @inherits LayoutComponentBase
 
-<div class="page">
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
-        </div>
+<PageTitle>Employee App</PageTitle>
 
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-</div>
+<MudLayout>
+    <MudAppBar Color="Color.Primary" Fixed="false" Elevation="0">
+        <MudButton Variant="Variant.Text" Edge="Edge.Start">Log work</MudButton>
+        <MudSpacer />
+        <MudButton Variant="Variant.Text">Manage assets</MudButton>
+        <MudButton Variant="Variant.Text">Manage assignments</MudButton>
+    </MudAppBar>
+    <MudGrid Class="pa-3">
+        <MudItem xs="12">
+            <MudMainContent>
+                @Body
+            </MudMainContent>
+        </MudItem>
+    </MudGrid>
+</MudLayout>
+
